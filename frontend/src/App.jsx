@@ -1,23 +1,13 @@
 import "./App.css";
 import VehicleCard from "./components/VehicleCard";
 import SearchFilters from "./components/SearchFilters";
+import Navbar from "./components/Navbar";
 
 
 function App() {
   return (
     <div className="app">
-      <nav className="navbar">
-        <div className="logo">🚗 Deal Hunter</div>
-        <button className="hamburger">☰</button>
-      </nav>
-
-      <div className="dashboard">
-        <aside className="sidebar">
-          <p>Dashboard</p>
-          <p>Listings</p>
-          <p>Favorites</p>
-          <p>Saved Searches</p>
-        </aside>
+        <Navbar />
 
         <main className="main-content">
           <section className="hero-section">
@@ -36,7 +26,6 @@ function App() {
           </section>
         </main>
       </div>
-    </div>
   );
 }
 
