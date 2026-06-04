@@ -1,8 +1,7 @@
 import "./App.css";
-import VehicleCard from "./components/VehicleCard";
 import SearchFilters from "./components/SearchFilters";
 import Navbar from "./components/Navbar";
-
+import ListingsGrid from "./components/ListingsGrid";
 
 function App() {
   return (
@@ -18,12 +17,7 @@ function App() {
           <section className="search-area">
             <SearchFilters />
           </section>
-
-          <section className="listings-grid">
-            <VehicleCard />
-            <VehicleCard />
-            <VehicleCard />
-          </section>
+          <ListingsGrid />
         </main>
       </div>
   );
