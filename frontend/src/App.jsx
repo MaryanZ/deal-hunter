@@ -1,5 +1,5 @@
 import "./App.css";
-
+import VehicleCard from "./components/VehicleCard";
 function App() {
   return (
     <div className="app">
@@ -30,29 +30,10 @@ function App() {
           </section>
 
           <section className="listings-grid">
-            <div className="vehicle-card">
-              <div className="vehicle-image">Image</div>
-              <h2>2015 Honda Civic</h2>
-              <p className="price">$7,000</p>
-              <p>168,000 miles • 2015</p>
-              <span className="deal-score">Good Deal</span>
-            </div>
-
-            <div className="vehicle-card">
-              <div className="vehicle-image">Image</div>
-              <h2>2012 Acura TL</h2>
-              <p className="price">$6,500</p>
-              <p>115,000 miles • 2012</p>
-              <span className="deal-score">Great Deal</span>
-            </div>
-
-            <div className="vehicle-card">
-              <div className="vehicle-image">Image</div>
-              <h2>2016 Mazda 3</h2>
-              <p className="price">$8,200</p>
-              <p>102,000 miles • 2016</p>
-              <span className="deal-score">Fair Deal</span>
-            </div>
+            <VehicleCard />
+            <VehicleCard />
+            <VehicleCard />
+            
           </section>
         </main>
       </div>
