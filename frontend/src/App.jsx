@@ -1,5 +1,8 @@
 import "./App.css";
 import VehicleCard from "./components/VehicleCard";
+import SearchFilters from "./components/SearchFilters";
+
+
 function App() {
   return (
     <div className="app">
@@ -23,17 +26,13 @@ function App() {
           </section>
 
           <section className="search-area">
-            <input type="text" placeholder="Search vehicles..." />
-            <input type="text" placeholder="Max price" />
-            <input type="text" placeholder="Max mileage" />
-            <button>Search</button>
+            <SearchFilters />
           </section>
 
           <section className="listings-grid">
             <VehicleCard />
             <VehicleCard />
             <VehicleCard />
-            
           </section>
         </main>
       </div>
